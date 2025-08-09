@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+
+# PWA resources
+Sitemap: /sitemap.xml
