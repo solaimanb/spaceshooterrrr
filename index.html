@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <meta name="description" content="Fast, mobile-friendly canvas space shooter with touch controls and power-ups." />
+    <meta name="author" content="S010" />
+    <meta name="theme-color" content="#05060a" />
+    <meta property="og:title" content="Space Shooter" />
+    <meta property="og:description" content="Fast, mobile-friendly canvas space shooter with touch controls and power-ups." />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:card" content="summary" />
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" as="image" href="public/jet.png" />
+    <link rel="preload" as="image" href="public/enemy.png" />
+    <link rel="icon" href="public/jet.png" />
+    <link rel="manifest" href="public/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  </head>
+  <body>
+    <div class="hud">
+      <div id="lives" class="hud-item left">Lives: 3</div>
+      <div id="score" class="hud-item right">Score: 0</div>
+    </div>
+
+    <main class="game-wrapper">
+      <canvas id="gameCanvas" width="800" height="600" aria-label="Space Shooter Game" role="img"></canvas>
+      <div id="overlay" class="overlay hidden"></div>
+    </main>
+
+    <div class="help">
+      <div>Move: Arrow Keys / WASD</div>
+      <div>Shoot: Space</div>
+      <div>Restart: Enter (after Game Over)</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Space Shooter",
+  "short_name": "Shooter",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#05060a",
+  "author": "S010",
+  "icons": [
+    { "src": "jet.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "jet.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
